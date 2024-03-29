@@ -2,6 +2,7 @@
 
 ### Menulock is a MacOS menu bar application that is used to invoke the screen saver.
 
+#### NB that this was designed for ScreenSaverEngine as it was designed on macOS 10.14 Mojave; it does not work on macOS Sonoma.
 ---
 
 # I. Installation and Prerequisites
@@ -18,6 +19,8 @@
 ---
 
 ## II. Notes
+
+- In light of macOS Sonoma's change in the screen saver architecture (among other factors), this program is officially obsolete. It still works, as far as it goes, on macOS 13 and earlier, but no new bugfixes, features, polish, or support for later system versions is forthcoming.
 
 - I wrote the earliest versions of Menulock on MacOS Mojave, and checked for dark mode to determine whether to use a black or a white icon. Under MacOS Big Sur and later, the wallpaper - rather than the theme - determines the color of the menu bar; this method is unreliable. There are ways of fixing this using an icon template, but rumps (as far as I can tell from its documentation) doesn't support this directly; it would require some more complicated work directly with the Python bindings to the Objective-C functions. At present, that is not supported.
 
